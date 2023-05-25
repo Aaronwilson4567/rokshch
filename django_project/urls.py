@@ -19,8 +19,11 @@ from django.urls import path,include
 
 
 
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     #include newly added pages/urls for project url pattern
     path('',include('pages.urls'))
+
 ]
