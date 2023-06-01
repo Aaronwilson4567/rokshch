@@ -24,6 +24,10 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     #include newly added pages/urls for project url pattern
-    path('',include('pages.urls'))
+    path('',include('pages.urls')),
+    #set up our login and logout pages
+    path("accounts/",include("django.contrib.auth.urls")),
+
+    path("accounts/",include("accounts.urls")),
 
 ]
